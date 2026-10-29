@@ -11,6 +11,7 @@ export default defineConfig({
       target: "react",
       routesDirectory: "./src/routes",
       generatedRouteTree: "./src/routeTree.gen.ts",
+      autoCodeSplitting: false,
     }),
     tanstackStart({ server: { entry: "server" } }),
     react(),
